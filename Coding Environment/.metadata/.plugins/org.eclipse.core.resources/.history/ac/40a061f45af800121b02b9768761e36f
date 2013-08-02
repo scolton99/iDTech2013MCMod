@@ -1,0 +1,16 @@
+
+public class dog extends pet{
+	public dog(){
+	}
+	public void bark(){
+		System.out.println("Bark");
+	}
+	public void wag(){
+		System.out.println("Tail-wag");
+	}
+	private String breed;
+	
+	public String getBreed(){
+		return this.breed;
+	}
+}

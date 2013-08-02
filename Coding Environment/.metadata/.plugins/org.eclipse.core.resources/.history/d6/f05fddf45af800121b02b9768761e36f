@@ -1,0 +1,32 @@
+
+public class pet {
+	public pet(){
+		weight = 0.0f;
+		age = 0;
+		color = "";
+	}
+	
+	private float weight;
+	private String color;
+	private int age;
+	
+	public float getWeight(){
+		return this.weight;
+	}
+	public int getAge(){
+		return this.age;
+	}
+	public String getColor(){
+		return this.color;
+	}
+	
+	public void setWeight(float newWeight){
+		this.weight = newWeight;
+	}
+	public void setAge(int newAge){
+		this.age = newAge;
+	}
+	public void setColor(String newColor){
+		this.color = newColor;
+	}
+}

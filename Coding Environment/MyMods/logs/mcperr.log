@@ -1,0 +1,12 @@
+15:03:54 - !! Can not find client md5s !!
+15:03:54 - !! Can not find server md5s !!
+15:28:14 - FATAL ERROR
+Traceback (most recent call last):
+  File "runtime\reobfuscate.py", line 56, in reobfuscate
+    reobfuscate_side(commands, CLIENT, reobf_all=reobf_all, srg_names=srg_names)
+  File "C:\Users\Student\Desktop\Spencer C\MyMods\runtime\mcp.py", line 152, in reobfuscate_side
+    commands.cleanreobfdir(side)
+  File "C:\Users\Student\Desktop\Spencer C\MyMods\runtime\commands.py", line 886, in cleanreobfdir
+    os.makedirs(outpathlk[side])
+  File "os.pyc", line 157, in makedirs
+WindowsError: [Error 5] Access is denied: 'reobf\\minecraft'

@@ -1,0 +1,36 @@
+
+public class start {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		pet fish = new pet();
+		fish.setAge(3);
+		fish.setWeight(1.1f);
+		fish.setColor("Gold");
+		System.out.println("Fish1");
+		System.out.println("Weight");
+		System.out.println(fish.getWeight());
+		System.out.println("Age");
+		System.out.println(fish.getAge());
+		System.out.println("Color");
+		System.out.println(fish.getColor());
+		dog Hagrid = new dog();
+		Hagrid.setAge(5);
+		Hagrid.setColor("Black and White");
+		Hagrid.setWeight(15.0f);
+		Hagrid.setBreed("Maltipoo");
+		System.out.println("Hagrid");
+		System.out.println("Weight");
+		System.out.println(Hagrid.getWeight());
+		System.out.println("Age");
+		System.out.println(Hagrid.getAge());
+		System.out.println("Color");
+		System.out.println(Hagrid.getColor());
+		System.out.println("Breed");
+		System.out.println(Hagrid.getBreed());
+	}
+
+}

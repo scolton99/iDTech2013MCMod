@@ -1,0 +1,47 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 8/2/13 7:56 PM
+Description: Exception occured in ModLoader
+
+java.lang.NullPointerException
+	at net.minecraft.src.CraftingManager.addRecipe(CraftingManager.java:208)
+	at net.minecraft.src.ModLoader.addRecipe(ModLoader.java:443)
+	at net.minecraft.src.mod_QuickTNT.<init>(mod_QuickTNT.java:7)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at net.minecraft.src.ModLoader.addMod(ModLoader.java:366)
+	at net.minecraft.src.ModLoader.readFromClassPath(ModLoader.java:1221)
+	at net.minecraft.src.ModLoader.init(ModLoader.java:779)
+	at net.minecraft.src.ModLoader.addAllRenderers(ModLoader.java:180)
+	at net.minecraft.src.RenderManager.<init>(RenderManager.java:96)
+	at net.minecraft.src.RenderManager.<clinit>(RenderManager.java:14)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:417)
+	at net.minecraft.src.MinecraftAppletImpl.startGame(MinecraftAppletImpl.java:41)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:726)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3111455176 bytes (2967 MB) / 3186360320 bytes (3038 MB) up to 3186360320 bytes (3038 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx3072M -Xms3072M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, MinecraftError, ReportedException, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	ModLoader: Mods loaded: 5
+ModLoader 1.5.2
+mod_EmeraldTools Version 1.1 - MC 1.5.2
+mod_Jetpack Version 1.0
+mod_LapisTools Version 1.0
+mod_Oxygen Oxymod Version 1.0

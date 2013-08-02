@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class start {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner read = new Scanner(System.in);
+		
+		pet fish = new pet();
+		fish.setAge(3);
+		fish.setWeight(1.1f);
+		fish.setColor("Gold");
+		System.out.println("Fish1");
+		System.out.println("");
+		System.out.println("Weight");
+		System.out.println(fish.getWeight());
+		System.out.println("");
+		System.out.println("Age");
+		System.out.println(fish.getAge());
+		System.out.println("");
+		System.out.println("Color");
+		System.out.println(fish.getColor());
+		System.out.println("");
+		System.out.println("");
+		dog Hagrid = new dog();
+		Hagrid.setAge(5);
+		Hagrid.setColor("Black and White");
+		Hagrid.setWeight(15.0f);
+		Hagrid.setBreed("Maltipoo");
+		System.out.println("Hagrid\n");
+		System.out.println("Weight");
+		System.out.println(Hagrid.getWeight()+"\n");
+		System.out.println("Age");
+		System.out.println(Hagrid.getAge()+"\n");
+		System.out.println("Color");
+		System.out.println(Hagrid.getColor()+"\n");
+		System.out.println("Breed");
+		System.out.println(Hagrid.getBreed());
+		
+		String animal;
+		
+		do{
+		System.out.println("Which animal? (@@d to exit)");
+		animal = read.nextLine();
+		if(isExit(animal))
+			return;
+		if(animal != "Hagrid" && animal !="Fish1"){
+			System.out.println("Invalid choice.\n");
+		}
+		}while(animal != "Hagrid" && animal != "Fish1");
+		
+			
+	}
+	
+	public boolean isExit(String test){
+		if(test == "@@D"){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+}

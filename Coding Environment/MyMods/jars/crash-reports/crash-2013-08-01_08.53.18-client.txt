@@ -1,0 +1,87 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 8/1/13 8:53 AM
+Description: Unexpected error
+
+java.lang.NullPointerException
+	at net.minecraft.src.BlockTallGrassLapis.getIcon(BlockTallGrassLapis.java:16)
+	at net.minecraft.src.Block.getBlockTextureFromSide(Block.java:496)
+	at net.minecraft.src.ItemBlock.getIconFromDamage(ItemBlock.java:38)
+	at net.minecraft.src.Item.getIconIndex(Item.java:257)
+	at net.minecraft.src.ItemStack.getIconIndex(ItemStack.java:117)
+	at net.minecraft.src.RenderItem.renderItemIntoGUI(RenderItem.java:342)
+	at net.minecraft.src.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:444)
+	at net.minecraft.src.GuiIngame.renderInventorySlot(GuiIngame.java:812)
+	at net.minecraft.src.GuiIngame.renderGameOverlay(GuiIngame.java:334)
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:968)
+	at net.minecraft.src.EntityRendererProxy.updateCameraAndRender(EntityRendererProxy.java:20)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:863)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:753)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.BlockTallGrassLapis.getIcon(BlockTallGrassLapis.java:16)
+	at net.minecraft.src.Block.getBlockTextureFromSide(Block.java:496)
+	at net.minecraft.src.ItemBlock.getIconFromDamage(ItemBlock.java:38)
+	at net.minecraft.src.Item.getIconIndex(Item.java:257)
+	at net.minecraft.src.ItemStack.getIconIndex(ItemStack.java:117)
+	at net.minecraft.src.RenderItem.renderItemIntoGUI(RenderItem.java:342)
+	at net.minecraft.src.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:444)
+	at net.minecraft.src.GuiIngame.renderInventorySlot(GuiIngame.java:812)
+	at net.minecraft.src.GuiIngame.renderGameOverlay(GuiIngame.java:334)
+	at net.minecraft.src.EntityRenderer.updateCameraAndRender(EntityRenderer.java:968)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player770'/216, l='MpServer', x=1477.87, y=73.62, z=275.09]]
+	Chunk stats: MultiplayerChunkCache: 0
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (236,64,100), Chunk: (at 12,4,4 in 14,6; contains blocks 224,0,96 to 239,255,111), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 5098 game time, 5098 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 1 total; [EntityClientPlayerMP['Player770'/216, l='MpServer', x=1477.87, y=73.62, z=275.09]]
+	Retry entities: 0 total; []
+Stacktrace:
+	at net.minecraft.src.WorldClient.addWorldInfoToCrashReport(WorldClient.java:405)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2446)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:776)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_13, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3029712072 bytes (2889 MB) / 3186360320 bytes (3038 MB) up to 3186360320 bytes (3038 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx3072M -Xms3072M
+	AABB Pool Size: 18931 (1060136 bytes; 1 MB) allocated, 10820 (605920 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, ILogAgent, MinecraftFakeLauncher, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	ModLoader: Mods loaded: 6
+ModLoader 1.5.2
+mod_EmeraldTools Version 1.1 - MC 1.5.2
+mod_Jetpack Version 1.0
+mod_LapisTools Version 1.0
+mod_Oxygen Oxymod Version 1.0
+mod_Sneakers Version 1.1
+
+	LWJGL: 2.4.2
+	OpenGL: Intel(R) HD Graphics 4000 GL version 3.3.0 - Build 8.15.10.2795, Intel
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 39 (2184 bytes; 0 MB) allocated, 39 (2184 bytes; 0 MB) used

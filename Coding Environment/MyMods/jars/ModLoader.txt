@@ -1,0 +1,28 @@
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: ModLoader 1.5.2 Initializing...
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader readFromClassPath
+FINER: Adding mods from D:\Users\Spencer Colton\Documents\iD Tech 2013\Coding Environment\MyMods\eclipse\Client\bin
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader readFromClassPath
+FINER: Directory found.
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addMod
+FINE: Mod Initialized: "mod_Cars Version 1.0" from mod_Cars.class
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addMod
+FINE: Mod Initialized: "mod_EmeraldTools Version 1.1" from mod_EmeraldTools.class
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addMod
+FINE: Mod Initialized: "mod_LapisTools Version 1.0" from mod_LapisTools.class
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addMod
+FINE: Mod Initialized: "mod_Oxygen Version 1.0" from mod_Oxygen.class
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addMod
+FINE: Mod Initialized: "mod_Sneakers Version 2.0" from mod_Sneakers.class
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: Mod Loaded: "mod_Cars Version 1.0"
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: Mod Loaded: "mod_EmeraldTools Version 1.1"
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: Mod Loaded: "mod_LapisTools Version 1.0"
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: Mod Loaded: "mod_Oxygen Version 1.0"
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader init
+FINE: Mod Loaded: "mod_Sneakers Version 2.0"
+Jan 28, 2014 10:23:43 AM net.minecraft.src.ModLoader addAllRenderers
+FINE: Initialized

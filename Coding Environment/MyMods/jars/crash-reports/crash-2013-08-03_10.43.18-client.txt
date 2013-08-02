@@ -1,0 +1,49 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 8/3/13 10:43 AM
+Description: Exception occured in ModLoader
+
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at net.minecraft.src.ModLoader.addMod(ModLoader.java:366)
+	at net.minecraft.src.ModLoader.readFromClassPath(ModLoader.java:1221)
+	at net.minecraft.src.ModLoader.init(ModLoader.java:779)
+	at net.minecraft.src.ModLoader.addAllRenderers(ModLoader.java:180)
+	at net.minecraft.src.RenderManager.<init>(RenderManager.java:96)
+	at net.minecraft.src.RenderManager.<clinit>(RenderManager.java:14)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:417)
+	at net.minecraft.src.MinecraftAppletImpl.startGame(MinecraftAppletImpl.java:41)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:726)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Slot 201 is already occupied by net.minecraft.src.BlockLeavesLapis@6bfcc2a1 when adding net.minecraft.src.BlockSaplingLapis@1f4e0f6a
+	at net.minecraft.src.Block.<init>(Block.java:289)
+	at net.minecraft.src.BlockFlower.<init>(BlockFlower.java:9)
+	at net.minecraft.src.BlockFlower.<init>(BlockFlower.java:18)
+	at net.minecraft.src.BlockSapling.<init>(BlockSapling.java:14)
+	at net.minecraft.src.BlockSaplingLapis.<init>(BlockSaplingLapis.java:10)
+	at net.minecraft.src.mod_LapisTools.<clinit>(mod_LapisTools.java:73)
+	... 15 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 6332680624 bytes (6039 MB) / 6407585792 bytes (6110 MB) up to 6407585792 bytes (6110 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx6G -Xms6G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, ILogAgent, MinecraftError, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	ModLoader: Mods loaded: 2
+ModLoader 1.5.2
+mod_EmeraldTools Version 1.1

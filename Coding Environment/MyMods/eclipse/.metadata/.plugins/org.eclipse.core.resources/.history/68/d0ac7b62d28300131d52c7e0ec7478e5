@@ -1,0 +1,33 @@
+package net.minecraft.src;
+
+public class CommandChickens extends CommandBase {
+
+	public CommandChickens() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getCommandName() {
+		// TODO Auto-generated method stub
+		return "chickens";
+	}
+
+	@Override
+	public void processCommand(ICommandSender var1, String[] var2) {
+		// TODO Auto-generated method stub
+		EntityPlayerMP thisPlayer = this.getCommandSenderAsPlayer(var1);
+		World par1World = thisPlayer.worldObj;
+		for(int i = 1; i<=500; i++){
+			new EntityChicken(par1World);
+		}
+	}
+	public int getRequiredPermissionLevel()
+    {
+        return 0;
+    }
+
+	public String getCommandUsage(ICommandSender par1ICommandSender)
+    {
+        return "/chickens";
+    }
+}

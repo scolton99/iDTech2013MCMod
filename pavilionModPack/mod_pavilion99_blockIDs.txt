@@ -1,0 +1,31 @@
+Mod Block IDs
+
+
+By Mod
+
+mod_LapisTools
+Lapis Leaves		201
+Lapis Sapling		202
+Lapis Tall Grass	203
+Lapis Vines			204
+Lapis Sword			506
+Lapis Shovel		507
+Lapis Pickaxe		508
+Lapis Axe			509
+Lapis Hoe			510
+Lapis Stick			511
+Lapis Helmet		512
+Lapis Chestplate	513
+Lapis Leggings		514
+Lapis Boots			515
+Lapis Biome			31
+
+mod_EmeraldTools
+Emerald Sword		501
+Emerald Shovel		502
+Emerald Pickaxe		503
+Emerald Axe			504
+Emerald Hoe			505
+
+
+By ID

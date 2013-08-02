@@ -1,0 +1,55 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 7/31/13 5:04 PM
+Description: Exception in server tick loop
+
+java.lang.ClassCastException: java.lang.Class cannot be cast to net.minecraft.src.WeightedRandomItem
+	at net.minecraft.src.WeightedRandom.getTotalWeight(WeightedRandom.java:19)
+	at net.minecraft.src.WeightedRandom.getRandomItem(WeightedRandom.java:61)
+	at net.minecraft.src.SpawnerAnimals.performWorldGenSpawning(SpawnerAnimals.java:233)
+	at net.minecraft.src.ChunkProviderGenerate.populate(ChunkProviderGenerate.java:523)
+	at net.minecraft.src.ChunkProviderServer.populate(ChunkProviderServer.java:233)
+	at net.minecraft.src.Chunk.populateChunk(Chunk.java:1138)
+	at net.minecraft.src.ChunkProviderServer.loadChunk(ChunkProviderServer.java:128)
+	at net.minecraft.src.PlayerInstance.<init>(PlayerInstance.java:25)
+	at net.minecraft.src.PlayerManager.getOrCreateChunkWatcher(PlayerManager.java:84)
+	at net.minecraft.src.PlayerManager.addPlayer(PlayerManager.java:120)
+	at net.minecraft.src.ServerConfigurationManager.func_72375_a(ServerConfigurationManager.java:169)
+	at net.minecraft.src.ServerConfigurationManager.playerLoggedIn(ServerConfigurationManager.java:217)
+	at net.minecraft.src.ServerConfigurationManager.initializeConnectionToPlayer(ServerConfigurationManager.java:87)
+	at net.minecraft.src.IntegratedServerListenThread.networkTick(IntegratedServerListenThread.java:87)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:657)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:560)
+	at net.minecraft.src.IntegratedServer.tick(IntegratedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:470)
+	at net.minecraft.src.ThreadMinecraftServer.run(ThreadMinecraftServer.java:18)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_13, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2904302664 bytes (2769 MB) / 3186360320 bytes (3038 MB) up to 3186360320 bytes (3038 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx3072M -Xms3072M
+	AABB Pool Size: 4054 (227024 bytes; 0 MB) allocated, 4054 (227024 bytes; 0 MB) used
+	Suspicious classes: Start[net.minecraft.src.IPlayerUsage, ILogAgent, MinecraftFakeLauncher, ...]
+	IntCache: cache: 0, tcache: 0, allocated: 3, tallocated: 63
+	ModLoader: Mods loaded: 6
+ModLoader 1.5.2
+mod_EmeraldTools Version 1.1 - MC 1.5.2
+mod_Jetpack Version 1.0
+mod_LapisTools Version 1.0
+mod_Oxygen Oxymod Version 1.0
+mod_Sneakers Version 1.1
+
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 1256 (70336 bytes; 0 MB) allocated, 1256 (70336 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player84'/426, l='Copy of Copy of Test World Non-F', x=1400.50, y=81.50, z=256.50]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
